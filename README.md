@@ -16,7 +16,7 @@ Clone the repo
 
 ```
 git clone https://github.com/Tejasmadhukar/ai-project-data-pipeline.git
-cd DocumentQuerying
+cd ai-project-data-pipeline
 ```
 
 Add youtube video id of videos to <strong>videos.csv</strong> of which you wish to download commments. 
@@ -34,3 +34,7 @@ chmod +x script.sh
 ```
 
 Comments will be downloaded in /downloaded_comments directorty and 1000 comments will be downloaded by default sorted by most Popular.
+
+## Future Plans 
+
+* Integration into a fargate task.
