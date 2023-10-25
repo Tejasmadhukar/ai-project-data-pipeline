@@ -1,3 +1,5 @@
 requests
 pandas
 youtube-comment-downloader
+flask
+flask-cors

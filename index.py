@@ -36,18 +36,18 @@ def add_video():
 
     youtube_id = data["youtube_id"]
 
-    # Check if the CSV file is empty or doesn't exist
+    
     if not os.path.exists(CSV_FILE) or os.stat(CSV_FILE).st_size == 0:
         with open(CSV_FILE, 'w', newline='') as csvfile:
             csv_writer = csv.writer(csvfile)
             csv_writer.writerow(["youtube_id"])
 
-    # Add the video ID to the CSV
+    
     with open(CSV_FILE, 'a', newline='') as csvfile:
         csv_writer = csv.writer(csvfile)
-        csv_writer.writerow([youtube_id])
+        csv_writer.writerow([youtube_id]) 
 
-    # Download comments for the video
+    
     download_comments(youtube_id)
 
     return jsonify({"message": "Video added to CSV and comments downloaded successfully"})
